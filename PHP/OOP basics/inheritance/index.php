@@ -2,8 +2,10 @@
 
 error_reporting( -1 );
 
-require_once "classes/Book.php";
-require_once "classes/Laptop.php";
+spl_autoload_register( function ( $class ) {
+
+    include "classes/{$class}.php";
+} );
 
 function divider() {
 
