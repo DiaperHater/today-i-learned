@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 class Laptop extends Product{
     
     public $color;

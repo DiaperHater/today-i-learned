@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 class Book extends Product{
     
     public $author;
