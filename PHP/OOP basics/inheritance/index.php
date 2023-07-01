@@ -1,21 +1,8 @@
 <?php
 
-error_reporting( -1 );
+use Vxl\MyApp\MyApp;
 
-use classes\Book;
-use classes\Laptop;
+require_once __DIR__ . "/vendor/autoload.php";
 
-spl_autoload_register( function ( $class ) {
-
-    $class = str_replace('\\', '/', $class);
-    include __DIR__ . "/{$class}.php";
-} );
-
-$book = new Book( 'Oliver Twist', 13.99, 'Scott Reading' );
-$laptop = new Laptop( 'MacBook', 1200, 'Black' );
-
-echo $book->getProduct();
-
-echo "====================================" . PHP_EOL;
-
-echo $laptop->getProduct();
+$app = new MyApp();
+$app->run();

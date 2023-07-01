@@ -1,0 +1,16 @@
+{
+    "name": "vxl/myapp",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vxl\\MyApp\\": "src/MyApp/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valery Pronin",
+            "email": "pownmymail@gmail.com"
+        }
+    ]
+}
